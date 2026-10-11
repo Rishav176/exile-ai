@@ -1,0 +1,10 @@
+-- Execute from the pinned upstream src directory in the Linux test runtime.
+dofile("HeadlessWrapper.lua")
+assert(__mainObject__ and not __mainObject__.promptMsg, "PoB2 initialization failed")
+assert(build, "PoB2 did not expose a build")
+newBuild()
+assert(not __mainObject__.promptMsg, "PoB2 new-build initialization failed")
+assert(build.spec and build.calcsTab, "PoB2 build is incomplete")
+build.calcsTab:BuildOutput()
+assert(type(build.calcsTab.mainOutput) == "table", "PoB2 has no calculated output")
+print("EXILEAI_POB_SMOKE_OK")

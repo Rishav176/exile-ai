@@ -1,0 +1,14 @@
+name: PoB2 runtime smoke
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run PoB smoke check
+        run: python scripts/pob_smoke.py
