@@ -1,6 +1,6 @@
 # ExileAI optimization contract
 
-Status: Discovery decisions accepted; consolidated scope awaits user confirmation before implementation. Exact metric formulas and schemas require pinned-engine investigation.
+Status: Discovery decisions and consolidated scope confirmed by the user. EXAI-001 setup is complete; the evaluation spike is next. Exact metric formulas and schemas require pinned-engine investigation.
 
 ## Independent inputs
 

@@ -38,10 +38,10 @@ Loading a real character/build and comparing passive changes belongs to EXAI-002
 
 ## Completion record
 
-Implementation changes: Initialized local Git repository, Python package and locked uv environment, pytest/Ruff/mypy tooling, environment checker, Python CI, explicit-digest PoB container smoke scripts and manual CI workflow, pinned PoB2 submodule, and setup documentation.
+Implementation changes: Initialized local Git repository, Python package and locked uv environment, pytest/Ruff/mypy tooling, environment checker, Python CI, explicit-digest PoB container smoke scripts and automatic CI workflow (also manually dispatchable), pinned PoB2 submodule, and setup documentation.
 
 Verification evidence: Git 2.47.0.windows.1; Python 3.12.6; uv 0.13.0; WSL 2.6.3.0 with Ubuntu-24.04 and Linux kernel 6.6.87.2-microsoft-standard-WSL2; Docker Desktop 4.94.0 / engine 29.8.2, linux/amd64. Ruff lint and format checks pass, mypy passes, pytest: 1 passed, environment checker: ready=true. PoB2 source bb52d6b368307457eb9c54bb13f1829993d390b1 and runtime sha256:171dc3da232b8c874882e4ae3b3aa4a6e130a6c9450a31904b312435a6bf5daf are pinned in pob-runtime.json. Two fresh network-disabled container runs produced EXILEAI_POB_SMOKE_OK. Upstream emitted 14 missing-tree-node diagnostics, recorded in docs/setup.md; real-build impact is an EXAI-002 investigation. No remote configured and hosted GitHub CI has not run.
 
 Review: Standards and spec reviews identified timeout cleanup and dirty-source acceptance; both were corrected. Final lint, formatting, type checks, package test, and hardened container smoke check pass. No smoke containers remain. The completion commit contains this ticket and the initialized project.
 
-Remaining blockers: None for local setup. No manual installation remains for local evaluation. EXAI-002 has not started. Codex sandbox setup intermittently fails; approved outside-sandbox commands worked for verification. Publishing GitHub issues/CI awaits establishing the remote.
+Remaining blockers: None for local setup. No manual installation remains for local evaluation. EXAI-002 has not started. The GitHub remote is now configured; hosted CI execution has not been verified. The initial verification above records the environment at ticket completion. The user controls all subsequent staging, commits, and pushes.

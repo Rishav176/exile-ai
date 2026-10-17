@@ -3,7 +3,7 @@
 ## Current verified environment
 
 - Workspace: `C:\Coding\ExileAI`.
-- Git: 2.47.0.windows.1; local repository initialized on `main`. No remote configured.
+- Git: 2.47.0.windows.1; repository initialized on `main`, with `origin` configured as `https://github.com/Rishav176/exile-ai.git`.
 - Python: 3.12.6, with `.venv` created by uv.
 - uv: 0.13.0, installed inside the ignored project-local `.tools` environment.
 - Ubuntu-24.04 boots under WSL2, kernel `6.6.87.2-microsoft-standard-WSL2`.
@@ -49,7 +49,7 @@ Docker automatically pulls the pinned image if absent. To update the runtime int
 
 The smoke script requires a clean pinned upstream checkout, mounts source read-only, disables container networking, creates a fresh build, and checks that calculations produce an output table. It passed locally with `EXILEAI_POB_SMOKE_OK`. Its uniquely named container is forcibly removed on exit, including timeout/interruption. It does not prove real build import or passive mutation; those belong to EXAI-002. Upstream emitted missing-node diagnostics for 14 tree node IDs during initialization; these did not prevent bootstrap. Investigate their impact on real build allocations in EXAI-002.
 
-If a terminal opened before Docker installation cannot find `docker`, reopen it. The detected per-user CLI location here is `C:\Users\risha\AppData\Local\Programs\DockerDesktop\resources\bin`; no global PATH change was made by this setup.
+If a terminal opened before Docker installation cannot find `docker`, reopen it. For a per-user installation, the CLI may be located at `%LOCALAPPDATA%\Programs\DockerDesktop\resources\bin`; no global PATH change was made by this setup.
 
 ## Source and licenses
 
@@ -57,4 +57,6 @@ Keep PoB2 changes outside the submodule. Review source/runtime changes explicitl
 
 ## Completion gate
 
-Local Python checks and the pinned Linux PoB2 smoke check pass. Python and PoB smoke workflows run automatically on pushes/pull requests once hosted. CI has not yet run on GitHub; no repository remote exists. No hosted-CI success is claimed.
+Local Python checks and the pinned Linux PoB2 smoke check pass. The GitHub remote is configured, and Python and PoB smoke workflows are configured to run on pushes/pull requests. Hosted CI execution has not been verified; no hosted-CI success is claimed.
+
+The user reviews changes and handles staging, committing, and pushing. The agent leaves changes unstaged unless explicitly instructed otherwise.

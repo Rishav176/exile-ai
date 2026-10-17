@@ -1,6 +1,6 @@
 # ExileAI project discovery
 
-Status: Project-level understanding confirmed by user; EXAI-001 implementation authorized. WSL2 + Docker Desktop with Linux containers selected for reproducible evaluation workers.
+Status: Project-level understanding confirmed by user; EXAI-001 complete. EXAI-002 is next. WSL2 + Docker Desktop with Linux containers selected for reproducible evaluation workers.
 
 ## Requirements already established by the user
 
@@ -29,8 +29,8 @@ Accepted decisions:
 Accepted decisions:
 
 1. Optimize the imported active tree at its current level, preserving class, ascendancy, and the exact allocated-point budget. Begin with ordinary passive swaps and expand to larger reallocations later.
-2. Preserve the imported configuration for player-facing evaluation and report its assumptions. Use a separate fixed scenario for benchmarks. Enable only credible, documented conditions in that benchmark; flag/report additional settings that could inflate results. The actual setting policy remains pending source investigation and user agreement, because community acceptance is not a universal or mechanically sufficient rule.
-3. Superseded by Round 4: use configurable defensive minimums and an optional strict preservation mode. All modes preserve equipment and skill requirements. Survivability's offensive floor remains to be specified.
+2. Preserve the imported configuration for comparison and export, while optimizing under the audited scenario as refined in Rounds 3 and 4. Enable only credible, documented conditions in benchmarks and report unverified assumptions. Exact engine settings require pinned-source investigation.
+3. Refined by Rounds 4 and 5: use configurable defensive minimums and an optional strict preservation mode. All modes preserve equipment and skill requirements. Survivability defaults to an offensive floor equal to audited baseline damage, with an editable tolerance.
 4. Search uses a configurable evaluation budget. Return the best oracle-verified candidate found, plus improvement, evaluation count, and elapsed time; make no global-optimality claim.
 
 ## Round 3: Support and evaluation boundaries
@@ -51,11 +51,11 @@ Accepted decisions:
 4. Bossing prioritizes sustained single-target damage and survivability in a standardized encounter. Balanced profiles compare mapping/bossing tradeoffs.
 5. Audited scenarios require a build source and credible sustained availability for conditional effects; uncertain effects are unverified and excluded. Revalidate eligibility after every passive change. A future user option can explicitly assume buffs/charges are active, with results labeled as conditional and kept distinct from audited benchmark results.
 6. Initially exclude builds that depend on custom modifiers from benchmark eligibility, explaining the limitation; reviewed exceptions are deferred.
-7. Defensive constraints are user-configurable minimums for life, energy shield, resistances, and relevant max-hit/EHP under a fixed scenario. Armour, evasion, recovery, and other changes are tracked separately. Offer an optional strict defense-preservation mode. Exact default minimums and strict metric set remain to be specified.
+7. Defensive constraints are user-configurable minimums for life, energy shield, resistances, and relevant max-hit/EHP under a fixed scenario. Armour, evasion, recovery, and other changes are tracked separately. Offer an optional strict defense-preservation mode. Round 5 defines baseline-derived defaults; the exact supported metric set and numerical tolerances require pinned-source investigation.
 8. V1 optimizes passive allocations with exact passive-point preservation and defensive constraints. Assume respec costs are affordable; do not price trade items or gems in V1.
 9. Future item/gem upgrade plans must obey a hard currency constraint on the total proposed plan. Learned models predict performance improvements; the optimizer handles feasibility, cost, and combinations. PoB2 evaluates the complete modified build: individual upgrade gains are not additive.
 10. Future training examples record the full encounter configuration and optimization objective, with versions and assumption policy. Initial boss-only data provides no evidence of mapping generalization.
-11. Keep local Markdown tickets and publish matching GitHub issues once the remote is established. Finish each ticket with verification evidence and a commit, then report completion before starting the next ticket.
+11. Keep local Markdown tickets and publish matching GitHub issues through the configured remote. Finish each ticket with verification evidence and a completion report before starting the next ticket. The user reviews changes and controls staging, committing, and pushing; the agent must not run Git add, commit, or push commands unless explicitly instructed.
 
 Research outcome: PoB2 configuration supports forced combat states, custom modifiers, and party effects; all need audit coverage. No universal authoritative community checklist was identified. Define ExileAI's explicit versioned policy instead. Primary sources: https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/dev/src/Modules/ConfigOptions.lua and https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2/blob/dev/src/Classes/ConfigTab.lua . Reverify exact fields against the selected pinned revision.
 
@@ -71,4 +71,4 @@ Accepted decisions:
 
 All project-level decisions raised in this interview are settled. Exact PoB fields, supported mechanics, enemy parameters, metric formulas, numerical tolerances, and runtime compatibility are factual/technical work assigned to the oracle and objective tickets. Any new product tradeoff uncovered there returns to the grill-with-docs workflow.
 
-Next checkpoint: confirm this consolidated scope, then start EXAI-001 only. Finish its acceptance criteria, verification record, and commit, and report completion before moving to EXAI-002.
+Current checkpoint: EXAI-001 is complete and its initial commit is ready for user review. The GitHub remote is configured. EXAI-002 will prove real-build import, passive mutation, and before/after evaluation. Subsequent changes remain unstaged for user review; staging, commits, and pushes belong to the user.
