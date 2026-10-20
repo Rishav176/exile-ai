@@ -1,0 +1,11 @@
+{
+  "operation": "benchmark_swap",
+  "tree_version": "0_5",
+  "scenario": {
+    "id": "solo-sustained-pinnacle-v1",
+    "config": {"enemyIsBoss": "Pinnacle", "enemyLevel": 82, "enemyDamageType": "Average"}
+  },
+  "objective": {"id": "diagnostic-metrics-v1", "mode": "DPS", "ranking": "none"},
+  "metrics": ["CombinedDPS", "TotalDPS", "Life", "EnergyShield", "TotalEHP", "PhysicalMaximumHitTaken", "FireMaximumHitTaken", "ColdMaximumHitTaken", "LightningMaximumHitTaken", "ChaosMaximumHitTaken", "FireResist", "ColdResist", "LightningResist", "ChaosResist"],
+  "action": {"remove": 52399, "add": 9050}
+}

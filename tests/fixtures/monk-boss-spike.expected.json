@@ -1,0 +1,34 @@
+{
+  "before": {
+    "CombinedDPS": 242864.38829736,
+    "TotalDPS": 151359.02365497,
+    "Life": 1,
+    "EnergyShield": 8657,
+    "TotalEHP": 49308.744871913,
+    "PhysicalMaximumHitTaken": 8658,
+    "FireMaximumHitTaken": 30921,
+    "ColdMaximumHitTaken": 30921,
+    "LightningMaximumHitTaken": 33300,
+    "ChaosMaximumHitTaken": null,
+    "FireResist": 75,
+    "ColdResist": 75,
+    "LightningResist": 77,
+    "ChaosResist": 0
+  },
+  "after": {
+    "CombinedDPS": 235633.49232952,
+    "TotalDPS": 148030.88532174,
+    "Life": 1,
+    "EnergyShield": 8657,
+    "TotalEHP": 49308.744871913,
+    "PhysicalMaximumHitTaken": 8658,
+    "FireMaximumHitTaken": 30921,
+    "ColdMaximumHitTaken": 30921,
+    "LightningMaximumHitTaken": 33300,
+    "ChaosMaximumHitTaken": null,
+    "FireResist": 75,
+    "ColdResist": 75,
+    "LightningResist": 77,
+    "ChaosResist": 0
+  }
+}

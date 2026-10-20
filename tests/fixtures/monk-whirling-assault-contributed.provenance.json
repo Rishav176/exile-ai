@@ -1,0 +1,16 @@
+{
+  "kind": "user-contributed-real-build-derived-selection",
+  "permission": "User authorized anonymized contributed exports for repository inclusion, approved Whirling Assault selection and the benchmark integration work; publication remains subject to their review.",
+  "class": "Monk",
+  "ascendancy": "Martial Artist",
+  "level": 96,
+  "tree_version": "0_5",
+  "source_revision": "bb52d6b368307457eb9c54bb13f1829993d390b1",
+  "main_skill": "Whirling Assault",
+  "xml_sha256": "02ac376b7ee8f1ddda3f7652d83ce06942a725002d86593e72dba9fb6083aeba",
+  "original_xml_sha256": "78e42880197fa327eaa76e9709c89369d4cc697e1e8adf5c867ef4c588b61d23",
+  "changes": ["Existing anonymizer removes identity/import metadata, notes, labels and item Unique IDs", "User-approved mainSocketGroup change from 9 (disabled Wind Dancer) to 8 (enabled Whirling Assault)"],
+  "unchanged": ["Equipment and jewels", "Skills and supports", "Passive allocations and attribute choices", "Imported calculation settings"],
+  "benchmark_eligible": false,
+  "limitation": "Stored fixture retains imported assumptions. Benchmark normalization is performed explicitly by the adapter and recorded separately."
+}

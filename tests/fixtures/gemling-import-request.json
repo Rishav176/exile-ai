@@ -1,0 +1,5 @@
+{
+  "operation": "inspect_import",
+  "tree_version": "0_5",
+  "metrics": ["CombinedDPS", "TotalDPS", "Life", "EnergyShield", "TotalEHP", "PhysicalMaximumHitTaken", "FireMaximumHitTaken", "ColdMaximumHitTaken", "LightningMaximumHitTaken", "ChaosMaximumHitTaken", "FireResist", "ColdResist", "LightningResist", "ChaosResist"]
+}

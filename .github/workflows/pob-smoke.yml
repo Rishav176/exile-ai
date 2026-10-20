@@ -12,3 +12,11 @@ jobs:
           python-version: '3.12'
       - name: Run PoB smoke check
         run: python scripts/pob_smoke.py
+      - name: Restore Python test environment
+        run: |
+          python -m pip install uv==0.13.0
+          uv sync --locked
+      - name: Verify fixture import and passive mutation
+        env:
+          EXILEAI_POB_INTEGRATION: '1'
+        run: uv run --locked pytest tests/integration/test_passive_spike.py

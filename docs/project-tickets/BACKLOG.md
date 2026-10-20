@@ -2,7 +2,7 @@
 
 Work through these tickets in order. Complete the acceptance criteria, record verification evidence, and update status before starting the next ticket. These are local tickets, ready to copy into GitHub Issues when the repository remote is confirmed.
 
-EXAI-001 is **Complete**; subsequent tickets remain **Open**. Existing scaffolding must be inspected and reused before implementation. The prior PoB2 research is an input to verification, not proof that the real-build oracle spike already works.
+EXAI-001 and EXAI-002 are **Complete**; subsequent tickets remain **Open**. Next is EXAI-003. Existing scaffolding must be inspected and reused before implementation. EXAI-002 records the reproducible real-build proof and its restricted benchmark limitations; broader build support must not be inferred from it.
 
 The accepted [optimization contract](../optimization-contract.md) and [discovery decisions](../project-discovery.md) refine the tickets below. In particular, encounter profiles and optimization modes are separate; scenarios/objectives/constraints are explicit inputs; defensive minima replace mandatory preservation of every defensive statistic; and V1 implements the standardized boss benchmark with passive-only changes. Currency-aware item/gem optimization is post-V1.
 
@@ -27,7 +27,7 @@ Status: Complete. Detailed scope and verification: [EXAI-001-initialization.md](
 
 ## EXAI-002 — Prove PoB2 headless evaluation and a budget-preserving passive swap
 
-Status: Open. Depends on: EXAI-001.
+Status: Complete. Depends on: EXAI-001. See [detailed acceptance record](EXAI-002-oracle-spike.md) and [experiment instructions](../pob2-spike.md).
 
 Inspect the pinned upstream source and runtime, then implement the smallest repeatable evaluation proof. Decode a permissioned real PoB2 share code in Python, validate the XML, load it headlessly, extract offense and defense, apply a legal one-point swap through PoB2's passive methods, and recalculate. Keep calculations inside PoB2.
 

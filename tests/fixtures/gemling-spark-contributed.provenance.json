@@ -1,0 +1,30 @@
+{
+  "kind": "user-contributed-real-build",
+  "permission": "User explicitly confirmed permission to include an anonymized copy in the repository.",
+  "origin": "PoB2 share code supplied in project conversation; not independently verified as a played character.",
+  "source_revision": "bb52d6b368307457eb9c54bb13f1829993d390b1",
+  "class": "Mercenary",
+  "ascendancy": "Gemling Legionnaire",
+  "level": 90,
+  "active_tree": 8,
+  "tree_version": "0_5",
+  "active_skill_set": 8,
+  "main_skill": "Spark",
+  "active_config_set": 12,
+  "xml_sha256": "4cba5d246029f9b518efbfd418289cd3b42b031195355c308283d5ce11570d22",
+  "original_xml_sha256": "05a56c8ba382512829690fdf5ed3d110d2fc6aa0418f605e21b3f72fd6094322",
+  "removed_metadata": [
+    "Notes and node notes",
+    "Import metadata including lastCharacterHash and lastRealm",
+    "Display labels/titles and explicit account/character/import URL attributes",
+    "Item Unique ID lines"
+  ],
+  "calculation_state": "Skills, gear, passives and configuration retained; not normalized to benchmark.",
+  "benchmark_eligible": false,
+  "limitations": [
+    "Multiple tree and skill sets",
+    "Eight jewel sockets in active tree",
+    "Custom cost-efficiency modifier",
+    "Conditional charges and buffs require evidence audit"
+  ]
+}

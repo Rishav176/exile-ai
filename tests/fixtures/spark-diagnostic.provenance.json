@@ -1,0 +1,24 @@
+{
+  "kind": "synthetic-diagnostic-not-player-build",
+  "origin": "Exported by pinned PoB2 using scripts/pob_spike.lua create_fixture",
+  "redistribution": "Project-authored diagnostic recipe and generated build; no third-party player or account data.",
+  "source_revision": "bb52d6b368307457eb9c54bb13f1829993d390b1",
+  "tree_version": "0_5",
+  "target_version": "0_1",
+  "skill": "Spark level 1",
+  "class": "Sorceress",
+  "level": 90,
+  "points": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "xml_sha256": "6ad99ae7d3bc6291e1ce23010c50401a5496de0a01b68cd165f5c817161485a8",
+  "limitations": [
+    "One allocated passive; no equipment; not an endgame benchmark or evidence of real-player-build support.",
+    "Skill/gear configuration is a transport and mutation diagnostic only."
+  ]
+}

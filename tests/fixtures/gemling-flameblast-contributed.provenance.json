@@ -1,0 +1,28 @@
+{
+  "kind": "user-contributed-real-build",
+  "origin": "User-provided replacement export attached to the project conversation",
+  "permission": "User supplied replacement for the previously authorized anonymized integration fixture; publication remains subject to user review and Git push.",
+  "class": "Mercenary",
+  "ascendancy": "Gemling Legionnaire",
+  "level": 98,
+  "tree_version": "0_5",
+  "main_skill": "Flameblast",
+  "source_revision": "bb52d6b368307457eb9c54bb13f1829993d390b1",
+  "xml_sha256": "8669fa8d1a620025cdbbb59c04f301d6c157bf9992c39046e23de8b52803f77b",
+  "original_xml_sha256": "3ccf717c3b05a7a2a2ae516f71e4cd180d7e063c35795014085b031fcf2f0dc4",
+  "removed_metadata": [
+    "Notes",
+    "Import fields",
+    "Display titles/labels",
+    "Identity and import URL attributes",
+    "Item Unique ID lines"
+  ],
+  "fixed_mechanics": [
+    "Weapon-set 1 allocation, 24 points",
+    "Weapon-set 2 allocation, 24 points",
+    "All equipped jewels including Voices",
+    "Voices grants free sockets 26178 and 62152"
+  ],
+  "benchmark_eligible": false,
+  "limitation": "Read-only import regression case. Ordinary swap trials failed requirement and full weapon-set budget checks; no successful mutation is claimed."
+}

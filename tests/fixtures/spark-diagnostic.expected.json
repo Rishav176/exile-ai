@@ -1,0 +1,96 @@
+{
+  "source_revision": "bb52d6b368307457eb9c54bb13f1829993d390b1",
+  "scenario": {
+    "config": {
+      "enemyDamageType": "Average",
+      "enemyIsBoss": "Pinnacle",
+      "enemyLevel": 82
+    },
+    "id": "solo-sustained-pinnacle-v1"
+  },
+  "objective": {
+    "id": "diagnostic-metrics-v1",
+    "mode": "DPS",
+    "ranking": "none"
+  },
+  "action": {
+    "add": 44871,
+    "remove": 4739
+  },
+  "before": {
+    "allocated": [
+      4739,
+      54447
+    ],
+    "metrics": {
+      "ChaosMaximumHitTaken": 1187,
+      "ChaosResist": 0,
+      "ColdMaximumHitTaken": 791,
+      "ColdResist": -50,
+      "CombinedDPS": 4.6714285714286,
+      "EnergyShield": 0,
+      "FireMaximumHitTaken": 791,
+      "FireResist": -50,
+      "Life": 1187,
+      "LightningMaximumHitTaken": 791,
+      "LightningResist": -50,
+      "PhysicalMaximumHitTaken": 1187,
+      "TotalDPS": 4.6714285714286,
+      "TotalEHP": 872.13826500793
+    },
+    "points": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "after": {
+    "allocated": [
+      44871,
+      54447
+    ],
+    "metrics": {
+      "ChaosMaximumHitTaken": 1192,
+      "ChaosResist": 0,
+      "ColdMaximumHitTaken": 798,
+      "ColdResist": -50,
+      "CombinedDPS": 4.2821428571429,
+      "EnergyShield": 10,
+      "FireMaximumHitTaken": 798,
+      "FireResist": -50,
+      "Life": 1187,
+      "LightningMaximumHitTaken": 798,
+      "LightningResist": -50,
+      "PhysicalMaximumHitTaken": 1197,
+      "TotalDPS": 4.2821428571429,
+      "TotalEHP": 875.81197294815
+    },
+    "points": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "deltas": {
+    "ChaosMaximumHitTaken": 5,
+    "ChaosResist": 0,
+    "ColdMaximumHitTaken": 7,
+    "ColdResist": 0,
+    "CombinedDPS": -0.38928571428571,
+    "EnergyShield": 10,
+    "FireMaximumHitTaken": 7,
+    "FireResist": 0,
+    "Life": 0,
+    "LightningMaximumHitTaken": 7,
+    "LightningResist": 0,
+    "PhysicalMaximumHitTaken": 10,
+    "TotalDPS": -0.38928571428571,
+    "TotalEHP": 3.6737079402186
+  }
+}
